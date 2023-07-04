@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background: whitesmoke;
+    /* height: 100vh; */
+}
+
+main {
+    width: 30%;
+    height: 69vh;
+    margin: auto;
+    border: 1px solid black;
+    margin-top: 50px;
+    border-radius: 5px;
+    background: #090d16;
+}
+
+#result {
+    border: 1px solid black;
+    height: 25vh;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 50px;
+    font-family: cursive;
+    border-radius: 10px;
+    padding-top: 40px;
+    padding-right: 20px;
+    background: #E0FFFF;
+}
+
+.btz {
+    /* border: 1px solid black; */
+    /* margin-top: 10px; */
+    height: 40vh;
+    margin-top: 13px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    /* display: grid; */
+    /* height: 0vh; */
+    /* border: 1px solid #000000; */
+}
+
+.btz button {
+    background: rgb(123, 117, 129);
+    border-color: rgb(168, 168, 168);
+    
+}
+ #CE{
+    font-family: 'Press Start 2P', cursive;
+    color: green;
+}
+
+#dc{
+    font-family: 'Press Start 2P', cursive;
+    color: orange;
+}
+
+
+.sci {
+    margin-top: 30px;
+    margin-left: 125px;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    background: teal;
+    transition: 0.5s;
+}
+.sci:hover {
+    transform: scale(1.1 , 1.1);
+    color: white;
+}
+
+@media (max-width: 375px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body {
+        width: 100%;
+        position: relative;
+    }
+    .btz {
+        height: 39vh;
+    }
+    body main {
+        width: 80%;
+        height: 69vh;
+    }
+    body .sci {
+        position: absolute;
+        right: 110px;
+        top: 100%;
+        width: 170px;
+        border-radius: 30px;
+    }
+}
+@media (max-width: 414px) {
+    body main {
+        width: 80%;
+        height: 68vh;
+    }
+    body .sci {
+        position: absolute;
+        right: 125px;
+    }
+}
